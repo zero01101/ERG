@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ERG.Form1">
+    <Position X="1.25" Y="5.25" Width="4.25" />
+    <Members>
+      <Field Name="bigpolygondrawing" Hidden="true" />
+      <Field Name="blackcircles" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="ERGoutput" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="offset" Hidden="true" />
+      <Field Name="panel0" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel10" Hidden="true" />
+      <Field Name="panel11" Hidden="true" />
+      <Field Name="panel12" Hidden="true" />
+      <Field Name="panel13" Hidden="true" />
+      <Field Name="panel14" Hidden="true" />
+      <Field Name="panel15" Hidden="true" />
+      <Field Name="panel16" Hidden="true" />
+      <Field Name="panel17" Hidden="true" />
+      <Field Name="panel18" Hidden="true" />
+      <Field Name="panel19" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel20" Hidden="true" />
+      <Field Name="panel21" Hidden="true" />
+      <Field Name="panel22" Hidden="true" />
+      <Field Name="panel23" Hidden="true" />
+      <Field Name="panel24" Hidden="true" />
+      <Field Name="panel25" Hidden="true" />
+      <Field Name="panel26" Hidden="true" />
+      <Field Name="panel27" Hidden="true" />
+      <Field Name="panel28" Hidden="true" />
+      <Field Name="panel29" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel30" Hidden="true" />
+      <Field Name="panel31" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel5" Hidden="true" />
+      <Field Name="panel6" Hidden="true" />
+      <Field Name="panel7" Hidden="true" />
+      <Field Name="panel8" Hidden="true" />
+      <Field Name="panel9" Hidden="true" />
+      <Field Name="pulses" Hidden="true" />
+      <Field Name="resolution" Hidden="true" />
+      <Field Name="translate" Hidden="true" />
+    </Members>
+    <AssociationLine Name="pb" Type="ERG.patternbuilder">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.36" Y="-0.107" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="poly" Type="ERG.polygons">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.192" Y="0.31" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="sequencestring" Type="System.String">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.216" Y="-0.119" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="polycenter" Type="System.Drawing.Point">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.38" Y="0.268" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAIAACAAABABCICAICECAkAABATAAAQAB0D/BxA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pb" />
+      <Field Name="poly" />
+      <Field Name="sequencestring" />
+      <Field Name="polycenter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERG.patternbuilder">
+    <Position X="8.25" Y="6.25" Width="2.75" />
+    <AssociationLine Name="pattern" Type="System.Collections.ArrayList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.356" Y="0.578" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="counts" Type="System.Collections.ArrayList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.367" Y="0.808" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="remainders" Type="System.Collections.ArrayList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.367" Y="0.266" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="log" Type="System.Text.StringBuilder">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.211" Y="0.381" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="recursionlevel" Type="System.String">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.421" Y="0.623" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="logstring" Type="System.String">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.317" Y="0.289" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAARAAACAAAAAAAMAAgAIAAAAgAAAg=</HashCode>
+      <FileName>patternbuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pattern" />
+      <Field Name="counts" />
+      <Field Name="remainders" />
+      <Field Name="log" />
+      <Field Name="recursionlevel" />
+      <Field Name="logstring" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERG.polygons">
+    <Position X="0.5" Y="9.5" Width="7.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>polygons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="9.25" Y="9" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Orientation="Bottom" Position="0.433" />
+  </Class>
+  <Class Name="System.Collections.ArrayList" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Text.StringBuilder" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="System.Drawing.Point" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
