@@ -24,23 +24,22 @@ namespace ERG
             using (Graphics g = Graphics.FromImage(polygon))
             {
                 Pen pen = new Pen(Color.SlateGray, 4.0f);
+                SolidBrush redbrush = new SolidBrush(Color.Red);
+                SolidBrush blackbrush = new SolidBrush(Color.Black);
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 if (vertices.Length > 1)
                 {
                     g.DrawPolygon(pen, vertices);
-
                     for (int i = 0; i < sequence.Length; i++)
                     {
                         if (sequence[i] == '1')
                         {
-                            SolidBrush redbrush = new SolidBrush(Color.Red);
                             g.FillEllipse(redbrush, vertices[i].X - 6, vertices[i].Y - 6, 12, 12);
                         }
                         else
                         {
                             if (blackcircles)
                             {
-                                SolidBrush blackbrush = new SolidBrush(Color.Black);
                                 g.FillEllipse(blackbrush, vertices[i].X - 4, vertices[i].Y - 4, 8, 8);
                             }
                         }
